@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: blue;
+    border: 2px solid;
+    color: white;
+}
