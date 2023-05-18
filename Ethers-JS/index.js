@@ -1,13 +1,3 @@
-//Provider
-//Checking if we are connected
-// console.log("Hello world");
-//I. Connecting to Metamask
-const provider = new ethers.providers.Web3Provider(window.ethereum);
-
-// console.log(provider);
-
-//request for list of accounts on that wallet
-
 async function getAccounts() {
   const ethAccounts = await provider.send("eth_requestAccounts", []);
   //   console.log(ethAccounts);
@@ -47,3 +37,12 @@ async function connectWallet() {
   document.getElementById("button").innerHTML =
     address.slice(0, 10) + "..." + id;
 }
+
+//1. connect metamask by injecting Web3 Provider on our page
+// const provider = new ethers.providers.Web3Provider(window.ethereum);
+// console.log(provider);
+
+// async function getAccounts() {
+//   const ethAccounts = await provider.send("eth_requestAccounts", []);
+//   console.log(typeof ethAccounts[0]);
+// } --------------- 5/18 review connecting to Metamask
