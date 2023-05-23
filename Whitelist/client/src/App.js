@@ -124,7 +124,7 @@ function App() {
       if (joinedWhitelist) {
         return (
           <div className="description">
-            <p>Thanks for joining the Whitelist!</p>
+            <p className="whitelistMessage">Thanks for joining the Whitelist!</p>
           </div>
         );
       } else if (loading) {
@@ -152,20 +152,22 @@ function App() {
         providerOptions: {},
         disableInjectedProvider: false,
       });
-      connectWallet();
+      // connectWallet();
+      
     }
   }, [walletConnected]);
 
   return (
     <>
-      <div className="main">
-        <div>
+      <div className="main ">
+        <div className="border">
           <h1 className="title">Welcome to Crypto Devs</h1>
           <div className="description">
             It&#39;s an NFT collection for developers in Crypto.
           </div>
           <div className="description">
-            {numberOfWhitelisted} have already joined the whitelist.
+            <span className="whitelistNum">{numberOfWhitelisted}</span> have
+            already joined the whitelist.
           </div>
           <div>{renderButton()}</div>
           <div>

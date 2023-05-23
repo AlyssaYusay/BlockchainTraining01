@@ -5,17 +5,6 @@
   justify-content: center;
   align-items: center;
   font-family: "Courier New", Courier, monospace;
-  background-color: black;
-  color: #eaeaea;
-}
-
-.border {
-  border-radius: 100px;
-  border-color: rgb(72, 72, 72);
-  border-width: 10px;
-  border-style: double;
-  padding: 3rem;
-
 }
 
 .footer {
@@ -24,8 +13,6 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-  background-color: rgb(37, 37, 37);
-  color: #eaeaea;
 }
 
 .image {
@@ -46,26 +33,15 @@
 }
 
 .button {
-  border-radius: 100px;
-  background-color: rgb(160, 238, 255);
+  border-radius: 4px;
+  background-color: blue;
   border: none;
-  color: black;
+  color: #ffffff;
   font-size: 15px;
   padding: 20px;
   width: 200px;
   cursor: pointer;
   margin-bottom: 2%;
-
-}
-
-.whitelistNum {
-  color: rgb(160, 238, 255);
-  font-size: x-large;
-}
-
-.whitelistMessage {
-  color: rgb(160, 238, 255);
-
 }
 
 @media (max-width: 1000px) {
